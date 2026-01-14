@@ -1,0 +1,106 @@
+/* 全体 */
+.chat-container {
+  width: 100%;
+  max-width: 420px;
+  height: 90vh;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ヘッダー */
+.chat-header {
+  padding: 14px;
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* メッセージエリア */
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f5f7fa;
+}
+
+/* 共通メッセージ */
+.message {
+  max-width: 80%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Bot */
+.message.bot {
+  background: #e3f2fd;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* User */
+.message.user {
+  background: #1976d2;
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* 入力エリア */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input input:focus {
+  border-color: #1976d2;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  padding: 0 18px;
+  border-radius: 20px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chat-input button:disabled {
+  background: #90caf9;
+  cursor: not-allowed;
+}
+
+/* スクロールバー（Webkit） */
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
